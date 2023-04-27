@@ -8,21 +8,49 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
+        body{
+            background-color: pink;
+        }
         #todoList {
             list-style-type: none;
             padding: 0;
         }
-    
+        h1{
+            color: rgb(121, 1, 151);
+        }
         #todoList li {
             margin-bottom: 10px;
         }
     
         #todoList li span {
             cursor: pointer;
+            color: purple;
+            font-size: 2rem;
+            margin: 20px;
         }
     
         #inputTask {
             margin-bottom: 10px;
+            font-size: 1rem;
+            border: white;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        button{
+            color: rgb(201, 2, 121);
+            background: whitesmoke;
+            border-radius: 5px;
+            border: 0;
+            float: right;
+            margin-right: 200px;
+            font-size: 1.4rem;
+        }
+        button:hover{
+        background: rgb(201, 2, 121) ;
+        color: whitesmoke;
+        font-size: 1.5rem;
+      
         }
     </style>
     
@@ -32,19 +60,23 @@
 
    
 <main>
-    <div class="task-list">
-        <h1>To-Do List</h1>
+  
+        <div class="task-list">
+          <center>
+            <h1>To-Do List</h1>
         <div class="tasks">
             <div class="task">
                 <div class="content">
                     <input type="text" id="inputTask" placeholder="Enter a task"> 
                 </div>
             </div>
+              </center>
                 <div class="actions">
                     <ul id="todoList"></ul>
                 </div>
        </div>
     </div>
+  
 </main> 
 
 
