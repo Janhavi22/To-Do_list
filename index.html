@@ -93,7 +93,7 @@
 
     // Add event listener for clicking "Add" button
     document.getElementById('addButton').addEventListener('click', addTask);
-
+    // document.getElementById('editButton').addEventListener('click', editTask);
     // Function to add a new task
     function addTask() {
         const task = inputTask.value.trim();
@@ -114,6 +114,19 @@
         const li = button.parentNode;
         li.parentNode.removeChild(li);
     }
+    // function editTask() {
+    //     const task = inputTask.value.trim();
+    //     if (task !== '') {
+    //         const li = document.createElement('li');
+    //         // li.innerHTML = `
+    //         //     <input type="checkbox">
+    //         //     <span>${task}</span>
+    //         //     <button onclick="deleteTask(this)">Delete</button>
+    //         // `;
+    //         todoList.appendChild(li);
+    //         inputTask.value = '';
+    //     }
+    // }
 </script>
 </body>
 </html>
